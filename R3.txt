@@ -1,0 +1,10 @@
+configure terminal
+interface loop23
+ ip address 23.23.23.23 255.255.255.255
+!
+
+router ospf 1
+ network 23.23.23.23 0.0.0.255 area 0 
+ network 192.168.1.0 0.0.0.255 area 0
+ 
+!
